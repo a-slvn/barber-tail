@@ -164,21 +164,6 @@ const getStatusBadgeColor = (status: string) => {
   }
 };
 
-const _getStatusDotColor = (status: string) => {
-  switch (status) {
-    case 'Active':
-      return 'bg-badge-success-background';
-    case 'Suspended':
-      return 'bg-badge-error-background';
-    case 'Inactive':
-      return 'bg-badge-neutral-background';
-    case 'Pending':
-      return 'bg-badge-warning-background';
-    default:
-      return 'bg-badge-neutral-background';
-  }
-};
-
 export default function Tables1() {
   const [selectedUsers, setSelectedUsers] = useState<string[]>([]);
   const [selectAll, setSelectAll] = useState(false);
