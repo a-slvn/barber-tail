@@ -188,7 +188,7 @@ function SectionBadge({ children }: { children: React.ReactNode }) {
 
 function GoldButton({ children, outline = false, className = '' }: { children: React.ReactNode; outline?: boolean; className?: string }) {
   const p = useP();
-  const { g1, g2, grad } = useGold();
+  const { g2, grad } = useGold();
   return (
     <button
       className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-200 ${className}`}

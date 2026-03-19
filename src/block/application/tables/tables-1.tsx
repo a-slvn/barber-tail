@@ -164,7 +164,7 @@ const getStatusBadgeColor = (status: string) => {
   }
 };
 
-const getStatusDotColor = (status: string) => {
+const _getStatusDotColor = (status: string) => {
   switch (status) {
     case 'Active':
       return 'bg-badge-success-background';
